@@ -33,10 +33,26 @@ This app has a/an ${license} license.`
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# Project Title: ${data.title}
-## Questions Section: 
-### Name: ${data.userName}
-### GitHub User Name: ${data.githubUserName}
-### Description: ${data.description}
+## Questions Section 
+## Name: ${data.userName}
+## GitHub User Name: ${data.githubUserName}
+## Project Description
+### ${data.description}
+# Table of Contents
+1. Questions
+2. Installation Instructions
+3. Usage
+4. Contributors
+5. Test Instructions
+6. License
+## Installation 
+### ${data.installation}
+# Usage
+### ${data.usageInfo}
+# Contributors
+### ${data.contributors}
+# Test Instructions
+### ${data.testInstructions}
 ### ${renderLicenseLink(data.license)}
 ${renderLicenseBadge(data.license)}
 ${renderLicenseSection(data.license)}
