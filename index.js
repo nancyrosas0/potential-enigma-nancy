@@ -14,6 +14,11 @@ inquirer
     },
     {
         type: 'input',
+        name: 'githubUserName',
+        message: 'What is your GitHub user name?'   
+    },
+    {
+        type: 'input',
         name: 'title',
         message: 'What is the title of your project?'
     },
@@ -21,6 +26,12 @@ inquirer
         type: 'input',
         name: 'description',
         message: 'Add a description of your project.'
+    }, 
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Would you like to choose a license?',
+        choices: ['mit', 'gpl-3.0', 'apache-2.0', 'unlicense']
     }
     ])
     .then(function(data) {
